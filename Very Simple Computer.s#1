@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -28083,6 +28083,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="185.42" y="38.1" size="5.08" layer="91">ACC</text>
 <text x="248.92" y="71.12" size="1.778" layer="91">Copy of ACC7 for BNN</text>
 <text x="243.84" y="119.38" size="1.778" layer="91">'541, '240 are both capable of driving LEDs.</text>
+<text x="91.44" y="205.74" size="1.778" layer="91">Max high-level output current of '374 is 2.6 mA.</text>
+<text x="91.44" y="198.12" size="1.778" layer="91">Input high current is 20 uA on the '541, '240.
+Input high current is 40 uA on the '83. </text>
+<text x="86.36" y="193.04" size="1.778" layer="91">So, 2.5 mA is available to drive LEDs.</text>
 </plain>
 <instances>
 <instance part="IC10" gate="A" x="226.06" y="149.86" rot="R270"/>
@@ -29526,4 +29530,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
